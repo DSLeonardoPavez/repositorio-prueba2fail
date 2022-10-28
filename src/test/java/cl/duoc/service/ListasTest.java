@@ -10,19 +10,19 @@ public class ListasTest {
     
     @Test
     public void testListas(){
-        IListAvion avionList = new ListarAvion();
+        IListarAvion avionList = new ListarAvion();
         IListAvioneta avionetaList = new ListarAvioneta();
         IListCarguero cargueroList = new ListarCarguero();
     }
 
     @Test
     public void testListaGlobal(){
-        IList<VehiculoAereo> avionList = new Listar();
+        IList<VehiculoAereo> avionList = new IListarAvion();
     }
 
     @Test
     public void testListaGlobal_Funcionamiento(){
-        IList<VehiculoAereo> avionList = new Listar();
+        IList<VehiculoAereo> avionList = new IListarAvion();
         avionList.Guardar(new Avion());
         avionList.Guardar(new Avioneta());
         avionList.Guardar(new Carguero());

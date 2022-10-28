@@ -9,7 +9,7 @@ import cl.duoc.service.IListAvion;
 import cl.duoc.service.app.ListarAvion;
 
 public class ListarAvionTest {
-    IListAvion listar;
+    IListarAvion listar;
     Avion avion;
 
     @Before
