@@ -23,13 +23,7 @@ public class DTOTest {
         Pasajero pasajero = new Pasajero();
     }
     
-    /*Avion es Extend de VehiculoAereo}
-    Tiene S.nombre
-    I.ValorVuelo
-    boolean.VueloDisponible
-    date.FechaVuelo
-    
-    */
+   
     @Test
     public void testToString()
     {
