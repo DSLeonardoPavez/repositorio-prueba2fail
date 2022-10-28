@@ -5,13 +5,13 @@ import cl.duoc.models.Avion;
 import java.util.ArrayList;
 
 
-public class IListarAvion {
+public class IListAvion {
     private ArrayList<Avion> Listar;
 
-    public IListarAvion(){
+    public IListAvion(){
         Listar = new ArrayList();
     }
-    public IListarAvion(ArrayList<Avion> Listar){
+    public IListAvion(ArrayList<Avion> Listar){
         this.Listar = Listar;
     }
 
@@ -35,7 +35,7 @@ public class IListarAvion {
         this.Listar.set(id, av);
     }
 
-    public Avion ObtenerInstagram(int id){
+    public Avion ObtenerAvion(int id){
         return this.Listar.get(id);
     }
 }
