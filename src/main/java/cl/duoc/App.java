@@ -8,6 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
+        
         /*
          * Hola, lo siento, se que es poco lo que rescaté de la información y poco contexto te dí,
          * pero de verdad necesito tu ayuda.
@@ -21,7 +22,10 @@ public class App
          * 
          * Lo necesitamos si o si para antes de la media noche entre el Martes 1ro de Noviembre y el Miércoles
          * 2 de Noviembre. Debe estar operativo y subido en github sino, nada valdrá la pena.
-        */
+        
         System.out.println("hola!");
+        */
+        
+        
     }
 }
