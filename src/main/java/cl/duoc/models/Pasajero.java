@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 
 public class Pasajero {
-    private String id;
+    String id;
     private String nombre;
     private LocalDate fechanacimiento;
     private int rut;
