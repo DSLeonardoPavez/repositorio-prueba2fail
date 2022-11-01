@@ -1,12 +1,35 @@
 
 package cl.duoc.models;
 
+import java.time.LocalDate;
+
 
 public class Pasajero {
-    
+    private String id;
     private String nombre;
+    private LocalDate fechanacimiento;
     private int rut;
-    private String idpasaporter;
+    private int telefono;
+    private String email;
+    private boolean vetado;
+
+    public Pasajero(String id, String nombre, LocalDate fechanacimiento, int rut, int telefono, String email, boolean vetado) {
+        this.id = id;
+        this.nombre = nombre;
+        this.fechanacimiento = fechanacimiento;
+        this.rut = rut;
+        this.telefono = telefono;
+        this.email = email;
+        this.vetado = vetado;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getNombre() {
         return nombre;
@@ -14,6 +37,14 @@ public class Pasajero {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public LocalDate getFechanacimiento() {
+        return fechanacimiento;
+    }
+
+    public void setFechanacimiento(LocalDate fechanacimiento) {
+        this.fechanacimiento = fechanacimiento;
     }
 
     public int getRut() {
@@ -24,22 +55,31 @@ public class Pasajero {
         this.rut = rut;
     }
 
-    public String getIdpasaporter() {
-        return idpasaporter;
+    public int getTelefono() {
+        return telefono;
     }
 
-    public void setIdpasaporter(String idpasaporter) {
-        this.idpasaporter = idpasaporter;
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
     }
 
-    public Pasajero(String nombre, int rut, String idpasaporter) {
-        this.nombre = nombre;
-        this.rut = rut;
-        this.idpasaporter = idpasaporter;
+    public String getEmail() {
+        return email;
     }
-    
-    
-    
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public boolean isVetado() {
+        return vetado;
+    }
+
+    public void setVetado(boolean vetado) {
+        this.vetado = vetado;
+    }
+
+ 
     
     
 }
