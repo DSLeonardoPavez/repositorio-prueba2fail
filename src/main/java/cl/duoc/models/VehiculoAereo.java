@@ -2,69 +2,64 @@
 package cl.duoc.models;
 import java.time.LocalDate;
 
-public class VehiculoAereo {
+public class VehiculoAereo extends Pasajero {
     
-     /*Avion es Extend de VehiculoAereo}
-    Tiene S.nombre
-    I.ValorVuelo
-    boolean.VueloDisponible
-    date.FechaVuelo
-    String Estado
-    */
+    private String origen;
+    private String destino;
+    private LocalDate fecha;
+    private String piloto;
     
-    private String nombre;
-    private int valorvuelo;
-    private boolean vuelodisponible;
-    private LocalDate fechavelo;
-    private String estado;
-
-    public VehiculoAereo(String nombre, int valorvuelo, boolean vuelodisponible, LocalDate fechavelo, String estado) {
-        this.nombre = nombre;
-        this.valorvuelo = valorvuelo;
-        this.vuelodisponible = vuelodisponible;
-        this.fechavelo = fechavelo;
-        this.estado = estado;
+    public VehiculoAereo(String id, String nombre, LocalDate fechanacimiento, int rut, int telefono, String email, boolean vetado) {
+        super(id, 
+                nombre,
+                fechanacimiento,
+                rut, 
+                telefono, 
+                email,
+                vetado);
     }
 
-    public String getNombre() {
-        return nombre;
+    public VehiculoAereo(String origen, String destino, LocalDate fecha, String piloto, String id, String nombre, LocalDate fechanacimiento, int rut, int telefono, String email, boolean vetado) {
+        super(id, nombre, fechanacimiento, rut, telefono, email, vetado);
+        this.origen = origen;
+        this.destino = destino;
+        this.fecha = fecha;
+        this.piloto = piloto;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public String getOrigen() {
+        return origen;
     }
 
-    public int getValorvuelo() {
-        return valorvuelo;
+    public void setOrigen(String origen) {
+        this.origen = origen;
     }
 
-    public void setValorvuelo(int valorvuelo) {
-        this.valorvuelo = valorvuelo;
+    public String getDestino() {
+        return destino;
     }
 
-    public boolean isVuelodisponible() {
-        return vuelodisponible;
+    public void setDestino(String destino) {
+        this.destino = destino;
     }
 
-    public void setVuelodisponible(boolean vuelodisponible) {
-        this.vuelodisponible = vuelodisponible;
+    public LocalDate getFecha() {
+        return fecha;
     }
 
-    public LocalDate getFechavelo() {
-        return fechavelo;
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
     }
 
-    public void setFechavelo(LocalDate fechavelo) {
-        this.fechavelo = fechavelo;
+    public String getPiloto() {
+        return piloto;
     }
 
-    public String getEstado() {
-        return estado;
+    public void setPiloto(String piloto) {
+        this.piloto = piloto;
     }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
+    
+    
     
     
             
